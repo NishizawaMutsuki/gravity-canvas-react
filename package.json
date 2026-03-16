@@ -12,11 +12,6 @@
       "require": "./dist/index.js"
     }
   },
-  "files": [
-    "dist",
-    "src",
-    "tsconfig.json"
-  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "prepare": "npm run build",
@@ -46,8 +41,5 @@
     "react": "^19.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "gravity-canvas-react": "github:NishizawaMutsuki/gravity-canvas-react"
   }
 }
