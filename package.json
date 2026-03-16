@@ -13,10 +13,13 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "tsconfig.json"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
